@@ -142,9 +142,6 @@ def process_file(json_file_path, model_path, output_file_path=None,
         if output_file_path:
             with open(output_file_path, 'w', encoding='utf-8') as f:
                 json.dump(new_data, f, ensure_ascii=False, indent=2)
-            print(f"Saved translated data to {output_file_path}")        if output_file_path:
-            with open(output_file_path, 'w', encoding='utf-8') as f:
-                json.dump(all_translated, f, ensure_ascii=False, indent=2)
             print(f"Saved translated data to {output_file_path}")
         else:
             # Default filename if output_file_path is not provided
